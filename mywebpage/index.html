@@ -1,123 +1,107 @@
 <!doctype html>
-
-<!-- так в HTML обозначаются комментарии. Выше вы видите объявление типа документа (DOCTYPE), так браузер понимает, что код ниже нужно интерпретировать как html -->
-
 <html>
+<head>
+<style>
+body {
+  height: 1500px;
+  background-image: linear-gradient(cyan, magenta)
+}
+</style>
 
-<!-- зона заголовка html, тег <title> - строка, которую браузер отображает на вкладках над страницами, <meta> и <link> сообщают технические сведения для браузера, например, что файл имеет кодировку Юникод (utf-8) -->
+<title>Личная страница Стёпы Тарантина</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
 
-	<head>
-		<title>Личная страница Веры Кузнецовой</title>
-	 	<!-- Required meta tags -->
-	 	<meta charset="utf-8">
-	 	<meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
+<nav class="navbar navbar-expand-lg bg-info">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="https://ling.hse.ru/">Школа лингвистики НИУ ВШЭ</a> 
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="https://lingvocodes.github.io/HSEinfo/ba-ling-2021/index.html">Страница курса</a>
+        <a class="nav-link" href="https://lingvocodes.github.io/HSEinfo/ba-ling-2021/latin_2.html">Страница группы</a>
+    </div>
+    </div>
+  </div>
+</nav>
 
-		<meta name="description" content="Личная страница и контакты">
-
-		<!-- Bootstrap Core CSS -->
-		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
-<!-- Эта страница сделана с помощью bootstrap - популярной библиотеки для создания и настройки сайтов. Ниже вы увидите, что многие теги содержат атрибуты class - bootstrap содержит шаблоны, как такие элементы красиво оформить -->
-
-	</head>
-	
-<!-- body - главная, содержательная часть страницы. Контент на этой странице делится на меню (nav), "шапку" (header), "подвал" (footer) и все остальное (мы заключили остаток в тег section) -->	
-	<body>
-
-<!-- меню (navigation bar) -->
-
-		<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
-
-<!-- div - это контейнеры - коробочки с текстом и/или графикой, которые можно вкладывать друг в друга. Пристально смотреть на теги в этой части кода не нужно -->
-			<div class="container"> 
-				<div class="navbar-header"> 
-					<a href="https://ling.hse.ru/" class="navbar-brand">Школа лингвистики НИУ ВШЭ</a> 
-				</div> 
-				<nav class="collapse navbar-collapse" id="bs-navbar"> 
-					<ul class="nav navbar-nav navbar-right"> 
-						<li> <a href="https://lingvocodes.github.io/HSEinfo/ba-ling-2021/index.html">Страница курса</a> </li> 
-						<li> <a href="https://lingvocodes.github.io/HSEinfo/ba-ling-2021/latin_2.html">Страница группы</a> </li> 
-<!-- поправьте номер группы в URL, если нужно (от 1 до 4) -->
-					</ul>
-				</nav> 
-			</div>
-		</nav>
-
-<!-- начинается шапка. у тега header есть атрибут style, который задает цвет фона и отступы. поменяйте значения атрибутов и посмотрите, как изменится страница -->
-
-		<header style="background-color:plum; padding-top:70px; "> 
-			<div class="container"> 
-				<div class="row">
-					<div class="col-md-4">
-						<br><br>
-<!-- здесь и дальше нужно поменять весь содержательный текст, чтобы получилась ваша личная страница -->
-						<h1>Оля Ляшевская</h1>
-						<hr> <!-- это горизонтальная линия -->
-						<p><i>Человек, умеющий <b>создавать</i> HTML</b></p> 
-					</div>
-					<div class="col-md-4">
-<!-- img - тег для вставки изображений. Мы использовали атрибут style, чтобы задать размер изображения и ширину рамки-->
-<!-- Измените URL на URL вашей фотографии, а также настройте размер изображения -->
-<img src="myphoto.jpg" style="height:320px; margin:20px 20px 40px 20px; " >
-					</div>
-				</div>
-			</div>
-		</header>
-
-<!-- часть страницы, которая под шапкой -->
-		<section id="portfolio">
-			<div class="container">
-
-<!-- атрибут col-md-... говорит, что контент будет разделен на несколько столбцов, их ширина соотносится как 3 - 6 - 3 (Bootstrap использует воображаемую сетку из 12 равных по ширине колонок) -->
-				<div class="col-md-3">
-
-<!-- <article> не влияет на оформление, но помогает структурировать контент на осмысленые разделы -->
-					<article>
-						<h3>Место учебы</h3>
-						<p>Фундаментальная и прикладная лингвистика, НИУ ВШЭ, Москва</p>
-					</article>
-					<article>
-						<h3>Родной город</h3>
-						<p>Москва</p>
-					</article>
-					<article>
-						<h3>Школа</h3>
-<!-- когда будете менять текст, не используйте бюрократических слов типа ГБОУ СОШ, ну пожаалуйста -->
-						<p>СУНЦ НГУ</p>
-					</article>
-				</div>
-
-				<div class="col-md-6">
-					<article>
-						<h3>Тут можно написать</h3>
-						<p>Еще много много много много много много <br>
-						много <br>
-						много <br>
-						много <br>
-						много <br>
-						много <br>
-						много <br>
-						много <br>
-						всего о себе</p>
-					</article>
-				</div>
-
-				<div class="col-md-3">
-					<h3>Я в соцсетях</h3>
-<!-- тег <ul> - unordered list. Еще бывает тег <ol> -->
-					<ul>
-						<li>VK</li>
-						<li>Discord</li>
-						<li>Telegram</li>
-					</ul>
-				</div>
-			</div>
-		</section>
-
-<!-- это подвал. В этой части страницы обычно ставят копирайт (с помощью символа &copy;) и пишут об истории создания страницы. Поставьте свой копирайт -->
-		<footer class="bs-docs-footer"> 
-			<div class="container"> 
-				<p style="text-align:right; ">&copy; В. Кузнецова, 2024</p> 
-			</div>
-		</footer>
-	</body>
-</html>
+<header>
+<div class="container text-left">
+  <div class="row">
+    <div class="col">
+      <h2>Я Стёпа Тарантин</h2>
+    </div>
+    <div class="col">
+      <h2>И это моя страничка</h2>
+		</div>
+</div>
+	<div class="container text-left">
+  <div class="row">
+    <div class="col">
+      <img src="myphoto.jpg">
+    </div>
+    <div class="col">
+       <img src="merowing.jpg" style="width:500px" "height:350px"><br>
+	   <p><b>(на этой фотографии я первый слева)</b></p>
+	</div>
+</div>
+</header>
+<hr size="5">
+<div class="container text-right">
+  <div class="row">
+    <div class="col">
+      <h2>Место учёбы</h2>
+	  <p>ФиКЛ НИУ ВШЭ, Москва</p><br>
+	  <h4>Школа</h4>
+	  <p> ГБОУ 2101(та, которая на западе Москвы)</p><br>
+	  <h4>Также аффилиирован c:</h4>
+	  <p>Музыкальной школой "Лад"<br>
+	  <p>Училищем Олимпийского Резерва №2 Москомспорта</p>
+    </div>
+    <div class="col">
+      <h2>Интересное обо мне:</h2>
+	  <p>Имею разряд КМС по академической гребле<br>
+	     Ходил на олимпиады по русскому языку ради заданий на <i><b>древнерусский</i></b> (и даже один раз дошёл до закла ВсОШ)<br>
+		 Ни разу не написал Традиционную олимпиаду по лингвистике или УОЛ больше чем на 24 балла</p><br>
+	  <h4>А теперь уже интересное мне:</h4>
+	  <p>Музыка эпохи барокко и советский авангард в искусстве и архитектуре<br> 
+	  (да, я сочетаю несочетаемое)<br>
+	   классическая латынь и этимология всего, до чего я могу дотянуться</p>
+		 
+    </div>
+    <div class="col">
+      <h2>Ссылки на мои соцсети:</h2>
+	   <a class="nav-link" href="https://vk.com/ya_stepochka">Это мой ВКонтакт(е)</a>
+	   <a class="nav-link" href="https://t.me/StepanTarantin">А это мой телеграм</a>
+	   
+    </div>
+  </div>
+</div>
+<footer>
+  <p style="text-align:right;" >S. Taratnin fecit in anno domini 2024</p>
+</footer> 
+<div class="container text-right">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p><b>ого, вы долистали до самого низа</b></p>
+</div>
+</body>
